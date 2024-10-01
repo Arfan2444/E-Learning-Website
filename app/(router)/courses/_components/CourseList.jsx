@@ -57,7 +57,7 @@ function CourseList() {
                 className="w-full h-[240px] rounded-xl m-2 bg-slate-200 animate-pulse"
               ></div>
             ))}
-        ;
+        
       </div>
     </div>
   );
