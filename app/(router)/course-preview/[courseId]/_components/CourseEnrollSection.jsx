@@ -80,7 +80,7 @@ function CourseEnrollSection({ courseInfo, isUserAlreadyEnrolled }) {
           <h2 className="text-white font-light">
             Continue to Learn Your Project
           </h2>
-          <Link href={"/watch-course" + isUserAlreadyEnrolled}>
+          <Link href={"/watch-course/" + isUserAlreadyEnrolled}>
             <Button className="bg-white text-primary hover:bg-white hover:text-primary">
               Continue
             </Button>

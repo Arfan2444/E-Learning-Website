@@ -3,6 +3,7 @@ import { useUser } from "@clerk/nextjs";
 import {
   BadgeIcon,
   BookOpen,
+  CheckCircle,
   GraduationCap,
   LayoutGrid,
   Mail,
@@ -32,9 +33,9 @@ function SideNav() {
     },
     {
       id: 4,
-      name: "Store",
-      icon: StoreIcon,
-      path: "/store",
+      name: "NewsLetter",
+      icon: Mail,
+      path: "/newsletter",
       auth: true,
     },
     {
@@ -52,10 +53,10 @@ function SideNav() {
       auth: true,
     },
     {
-      id: 5,
-      name: "Newsletter",
-      icon: Mail,
-      path: "/newsletter",
+      id: 3,
+      name: "Student Feedback",
+      icon: CheckCircle,
+      path: "/studentfeedback",
       auth: true,
     },
   ];
@@ -67,7 +68,15 @@ function SideNav() {
 
   return (
     <div className="p-5 bg-white shadow-sm border h-screen">
-      <Image src="/logo.jpeg" alt="logo" width={130} height={40}></Image>
+      <div class="w-32 h-32 overflow-hidden rounded-full border-4 border-gray-300">
+        <Image
+          src="/logo.jpg"
+          alt="logo"
+          width={130}
+          height={140}
+          class="object-cover w-full h-full"
+        />
+      </div>
       <hr className="mt-7"></hr>
       {/*Menu List*/}
       <div className="mt-8">
